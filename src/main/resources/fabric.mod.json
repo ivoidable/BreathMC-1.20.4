@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "breathmc",
+	"version": "${version}",
+	"name": "BreathMC",
+	"description": "This is a Demon Slayer Inspired Mod for Minecraft 1.20.4",
+	"authors": [
+		"kyo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/invoidable/BreathMC-1.20.4"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/breathmc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kyo.breathmc.BreathMC"
+		],
+		"client": [
+			"net.kyo.breathmc.BreathMCClient"
+		],
+		"fabric-datagen": [
+			"net.kyo.breathmc.BreathMCDataGenerator"
+		]
+	},
+	"mixins": [
+		"breathmc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
